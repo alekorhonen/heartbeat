@@ -1,26 +1,6 @@
 <template>
   <div id="app">
-    <div class="logo">
-      <img src="./assets/HeartBeat.png" />
-    </div>
-    <div class="sidebar">
-      <ul>
-        <li class="user-nav-link" v-if="LoggedIn">
-          <a href="#">
-            <img v-bind:src="userPhoto" />
-            {{ displayName }}
-            <span class="anchor"><font-awesome-icon icon="chevron-down" /></span>
-          </a>
-        </li>
-        <li class="title">Navigation</li>
-        <li><router-link to="/"><font-awesome-icon icon="home" class="icon" />&nbsp; Home</router-link></li>
-        <li><router-link to="/songs"><font-awesome-icon icon="music" class="icon" />&nbsp; Songs</router-link></li>
-        <li><router-link to="/playlists"><font-awesome-icon icon="book" class="icon" />&nbsp; Library</router-link></li>
-        <li class="title">Playlists</li>
-        <li><router-link to="/#">House</router-link></li>
-      </ul>
-      <button class='btn'><font-awesome-icon icon='plus' style='margin-right: 10px'/>Add a new Playlist</button>
-    </div>
+    <Sidebar />
     <div class="container">
       <div class="top-bar">
         <form class="search-form" @submit.prevent="search">
@@ -53,12 +33,14 @@
 </template>
 
 <script>
+import Sidebar from '@/components/Sidebar'
 import Player from '@/components/Player'
 
 export default {
   name: 'App',
   components: {
-    Player
+    Player,
+    Sidebar
   },
   data() {
     return {

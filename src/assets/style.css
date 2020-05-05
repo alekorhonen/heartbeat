@@ -39,14 +39,6 @@
     cursor: pointer;
   }
 
-  .logo img {
-    position: absolute;
-    top: -10px;
-    left: 45px;
-    width: 200px;
-    height: 100px;
-  }
-
   .titlebar {
     position: relative;
     width: 100%;
@@ -69,8 +61,7 @@
     float: left;
     width: 300px;
     top: 0;
-    padding-top: 90px;
-    height: calc(100vh - 177px);
+    height: 100vh;
     border-right: 1px solid rgba(255, 255, 255, 0.1);
   }
 
@@ -103,6 +94,15 @@
 
     max-height: 100%;
     overflow: auto;
+  }
+
+  .sidebar ul li.brand-name {
+    text-align: center;
+  }
+
+  .sidebar ul li.brand-name img {
+    width: 200px;
+    height: 100px;
   }
 
   .sidebar ul li.title {
