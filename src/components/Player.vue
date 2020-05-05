@@ -5,7 +5,7 @@
         <img src="https://files.musicmp3.ru/mcovers/alm79337.jpg" width="100%" height="100%" />
       </div>
       <div class="song-name">
-        Compton<br />
+        Bitch don't kill my vibe<br />
         <span class="artist-names">Kendrick Lamar, Dr. Dre</span>
       </div>
     </div>
