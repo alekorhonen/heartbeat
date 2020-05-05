@@ -19,6 +19,7 @@
         <li class="title">Playlists</li>
         <li><router-link to="/#">House</router-link></li>
       </ul>
+      <button class='btn'><font-awesome-icon icon='plus' style='margin-right: 10px'/>Add a new Playlist</button>
     </div>
     <div class="container">
       <div class="top-bar">

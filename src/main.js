@@ -5,10 +5,10 @@ import App from './App.vue'
 import router from './router'
 import { store } from './store/store'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faHome, faBook, faMusic, faPlayCircle, faPauseCircle, faBackward, faForward, faVolumeUp, faVolumeMute, faChevronLeft, faChevronRight, faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import { faPlus, faHome, faBook, faMusic, faPlayCircle, faPauseCircle, faBackward, faForward, faVolumeUp, faVolumeMute, faChevronLeft, faChevronRight, faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-library.add({faHome, faBook, faMusic, faPlayCircle, faPauseCircle, faBackward, faForward, faVolumeUp, faVolumeMute, faChevronLeft, faChevronRight, faChevronDown })
+library.add({faPlus, faHome, faBook, faMusic, faPlayCircle, faPauseCircle, faBackward, faForward, faVolumeUp, faVolumeMute, faChevronLeft, faChevronRight, faChevronDown })
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.use(firebase) 
 
