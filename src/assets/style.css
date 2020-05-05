@@ -68,7 +68,7 @@
   .container {
     float: right;
     width: calc(100% - 299px);
-    height: calc(100vh - 119px);
+    height: calc(100vh - 119px); /* full height minus the player height */
     overflow: auto;
   }
 
@@ -114,8 +114,12 @@
     padding: 0 35px;
   }
 
-  .sidebar ul li a {
+  .sidebar ul li a,
+  .sidebar ul li button {
     display: block;
+    background: transparent;
+    border: 0;
+    outline: 0;
     color: #FFFFFF;
     font-size: 14px;
     padding: 15px 50px;
@@ -124,6 +128,8 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+
+    cursor: pointer;
   }
 
   .sidebar ul li a .icon {
@@ -135,31 +141,6 @@
     background: rgba(0, 0, 0, 0.2);
     color: var(--primaryColor);
     border-color: var(--primaryColor);
-  }
-
-  .sidebar ul li.user-nav-link {
-    margin-bottom: 10px;
-  }
-
-  .sidebar ul li.user-nav-link .anchor {
-    position: absolute;
-    right: 15px;
-    top: 20px;
-    font-size: 10px;
-  }
-
-  .sidebar ul li.user-nav-link a {
-    position: relative;
-    padding-left: 75px;
-    font-weight: 600;
-  }
-
-  .sidebar ul li.user-nav-link a img {
-    position: absolute;
-    left: 25px;
-    top: 10px;
-    width: 35px;
-    border-radius: 50%;
   }
 
   /* width */
