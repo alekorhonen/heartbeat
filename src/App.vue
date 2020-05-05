@@ -35,7 +35,6 @@
 <script>
 import Sidebar from '@/components/Sidebar'
 import Player from '@/components/Player'
-
 export default {
   name: 'App',
   components: {
