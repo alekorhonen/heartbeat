@@ -1,4 +1,8 @@
-# musicapp
+# Heart Beat
+
+## Preview
+
+![Image of Heart Beat](https://i.imgur.com/nwXzHyP.png)
 
 ## Project setup
 ```
